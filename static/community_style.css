@@ -1,0 +1,77 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Style the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+section {
+  margin: 2em 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #1a8cff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}

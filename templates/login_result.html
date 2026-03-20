@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_result_style.css') }}">
+  </head>
+  <body>
+    <header>
+      <h1>Login Result</h1>
+    </header>
+    <main>
+      <section>
+        {% if result %}
+        <h2>Result:</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+			  <th>ID</th>
+			  <th>Privilege Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for username, password, id, priv in result %}
+            <tr>
+              <td>{{ username }}</td>
+              <td>{{ password }}</td>
+			  <td>{{ id }}</td>
+			  <td>{{ priv }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% else %}
+        <div class="error-box">
+          <h2>Error:</h2>
+          <p>Username or Password is incorrect</p>
+        </div>
+        {% endif %}
+      </section>
+    </main>
+  </body>
+</html>
